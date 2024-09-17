@@ -1,5 +1,7 @@
 -- Databricks notebook source
 -- MAGIC %python
+-- MAGIC
+-- MAGIC #new
 -- MAGIC dbutils.fs.ls('abfss://silver@databricksucdlextcg5.dfs.core.windows.net/')
 
 -- COMMAND ----------
