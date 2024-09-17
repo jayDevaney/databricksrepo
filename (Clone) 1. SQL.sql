@@ -5,6 +5,7 @@
 -- COMMAND ----------
 
 -- New comment
+--second comment
 SELECT * FROM demo.demo_schema.circuits;
 
 -- COMMAND ----------
