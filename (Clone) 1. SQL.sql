@@ -4,6 +4,7 @@
 
 -- COMMAND ----------
 
+-- New comment
 SELECT * FROM demo.demo_schema.circuits;
 
 -- COMMAND ----------
