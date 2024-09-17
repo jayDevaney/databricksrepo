@@ -1,10 +1,8 @@
 # Databricks notebook source
-## Add coment
 display(dbutils.fs.ls("/databricks-datasets/wine-quality/"))
 
 # COMMAND ----------
 
-## Another Change
 df = spark.read.csv("dbfs:/databricks-datasets/wine-quality/winequality-red.csv", header=True, sep=";")
 display(df)
 
