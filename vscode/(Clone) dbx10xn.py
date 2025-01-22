@@ -2,7 +2,9 @@ from pyspark.sql import SparkSession
 from pyspark.sql.types import *
 
 spark = SparkSession.builder.getOrCreate()
-
+   
+   
+   # Define the schema
 schema = StructType([
    StructField('CustomerID', IntegerType(), False),
    StructField('FirstName',  StringType(),  False),
@@ -24,6 +26,14 @@ data = [
    [ 1011, 'Katherine',    'Chambers' ]
 ]
 
+ # Load the data into a DataFrame
 customers = spark.createDataFrame(data, schema)
-customers.show()
+ 
+
+   # Save the DataFrame as a table
+customers.write.saveAsTable("main.default.people_10m")
+
+
+
+
 
